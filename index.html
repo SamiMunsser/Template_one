@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي الشخصية</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مرحبا، أنا سامي أحمد
+            </h1>
+            <p>I'm sami ahmed</p>
+
+            <p>مطور ويب ومصمم واجهات
+                <p>website programing devloper</p>
+            </p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="me"><a href="#about">عنّي</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#projects">المشاريع</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2>عنّي</h2>
+            <p>أنا مطور ويب ذو خبرة في تقنيات حديثة في تصميم وتطوير الواجهات. أستمتع بالعمل على مشاريع جديدة وبعض التحديات التقنية.</p>
+            
+            <hr><hr><br><br><img class="img" src="img/about.jpg" alt="صورة شخصية">
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>المهارات</h2>
+
+            <div class="skill">
+                <h3>تطوير الويب</h3>
+                <p>HTML, CSS, JavaScript, React, Node.js ,Python3 ,Wordpress</p>
+                <span>
+                    <img src="icons/html5.svg"  alt="">
+                    <img src="icons/css3-alt.svg" alt="">
+                    <img src="icons/js-square.svg" alt="">
+                    <img src="icons/react.svg" alt="">
+                    <img src="icons/node-js.svg" alt="">
+                    <img src="icons/angular.svg" alt="">
+                    <img src="icons/python.svg" alt="">
+                    <img src="icons/wordpress.svg" alt="">
+                </span>
+            </div>
+            <div class="skill">
+                <h3>تصميم واجهات المستخدم</h3>
+                <p>Photoshop, Illustrator, Figma</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>المشاريع</h2>
+            <div class="project">
+                <h3>مشروع  1 مدينة هزم <hr>Template 1 Hezem_City</h3>
+                <p>*شركة مدينة هزم للصرافة والتحويلات*
+                    <br>
+                     عملت على هذا المشروع باستخدام 
+                    [التقنيات المستخدمة]+.oop Php laraval
+
+                </p>
+            </div>
+            <div class="project">
+                <h3> Template 2 Mehrab
+                    <hr>2 مشروع محراب
+                </h3>
+                <p>وصف مختصر للمشروع محراب وهو منتدى يضم صور ومناسبات دينية 2. قمت بتطوير هذا المشروع باستخدام [التقنيات المستخدمة].</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>اتصل بي</h2>
+            <h6>Tel:+967778151177</h6>
+            <h6>Whtsepp:+967772666738</h6>
+            <h6>Gmail:samymn141up@gmail.com</h6>
+            <h6>Facebook:Sami Ahmed</h6>
+            <h6>Facebook:learn programing width Sami_Ahmed</h6>
+
+            
+            <p>للتواصل، يرجى إرسال بريد إلكتروني إلى <a href="samimn111sasa@hotmail.com">samimn111sasa@hotmail.com</a>.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h4 class="footer-h4">
+                © 2024 Sami_Ahmed.
+                 جميع الحقوق محفوظة
+               
+            </h2>
+        </div>
+    </footer>
+    
+    <script src="scripts.js">
+        // Add any interactivity or additional scripts here
+        // Example: Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

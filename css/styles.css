@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #150363;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background:#498eb7;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav {
+    background: #5f9abf;
+    color: #fff;
+    box-shadow: 94px 55px 49px 62px #ffffff;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+
+}
+nav ul li {
+    margin: 0 15px;
+    
+}
+section:nth-of-type( 1){
+    background-image: url(../img/water\ \(51\).jpg);
+    background-size: 1000vh;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Skills */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3,p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+.skill span img {
+    align-items: unset;
+    font-size: -20.5em;
+    display: inline-flex;
+    flex-direction: row;
+    width: 55px;
+    height: 55px;
+    background-color: orange;
+}
+
+
+
+@media (max-width:590px) {
+    .skill span img {
+        align-items: unset;
+        font-size: 12px;
+        display: inline-flex;
+        flex-direction: row;
+        width: 32px;
+        border-radius: 44px;
+        height: 32px;
+        background-color: rgba(255, 166, 0, 0.679);
+    }
+    .skill h3,p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    
+    }
+    h2{
+        
+    }
+}
+
+
+/* Projects */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+}
+.code1,.code2,.code3 span{
+    width: 555px;
+}
+.code1,.code2,.code3{
+    height: 30vh;
+    scroll-snap-type:111px ;
+    background-color: #180505;
+
+}
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Animation and Hover Effects */
+img {
+    width: 100%;
+    height: auto;
+    transition: transform cubic-bezier(0.63, 0.09, 0.68, 0.19);
+    border-left-style: solid;
+}
+
+.img:hover  {
+    transform: scale(1.05);
+    border-left:117px solid #498eb7 ;
+    border-right:77px solid #498eb7 ;
+    border-radius: 22px 11px 22px;
+    height: auto;
+    transition: 1.5s;
+    transform: translate(0px);
+}
+
+.container {
+    animation: fadeIn 2s ease-out;
+}
+.footer-h4{
+    color:#498eb7 ;
+    font-weight: 600;
+}
+@media (max-width:565px) {
+    .footer-h4{
+        color:#498eb7 ;
+        font-weight: 600;
+        font-size: 12;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
